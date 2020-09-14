@@ -199,79 +199,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--<div class="card-body">
-                            <div class="card">
-                                <div class="card-header" id="headingTwoOne">
-                                    <div action="method" class="col-12 form-group">
-                                        <div class="row justify-content-between">
-                                            <label id="chooseTeamTwo" class="col-6">Choose Your Team:</label>
-                                            <select v-on:change="filterTeamSeason()" id="team-dropdownTwo" name="teamTwo" v-model:value="selectedTeamTwo">
-                                                <option value="All Teams">All Teams</option>
-                                                <option v-for="team in teams" name="team"> {{team}} </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="col" id="headingTwoTwo">
-                                    <div class="row upcomingGames" v-for="game in filteredGameSeason">
-                                        <div class="accordion col" id="accordionExampleTwoTwo">
-                                            <div class="card">
-                                                <div class="card-header" id="headerTwoTwo">
-                                                    <button class="row btn btn-link btn  btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapseTwoTwo" aria-expanded="true" aria-controls="collapseTwoTwo">
-                                                        {{game.Dates}} - {{game.Teams}} -
-                                                        <span class="col-3 ">Info</span>
-                                                    </button>
-                                                </div>
-                                                <div id="collapseTwoTwo" class="collapse" aria-labelledby="headerTwoTwo" data-parent="#accordionExampleTwoTwo">
-                                                    <div class="card-body">
-                                                        <div class="row gamesInfo">
-                                                            <table class="table table-bordered">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Game</td>
-                                                                        <td>{{game.Id}}</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Time</td>
-                                                                        <td>{{game.Times}}</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Field</td>
-                                                                        <td>{{game.Location}}</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="address" colspan="2">
-                                                                            <iframe class="map-frame responsive border-0 col-12" :src="game.Details"></iframe>
-                                                                            {{game.Address}}</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="row justify-content-center">
-                                                            <div v-if="userLoggedIn">
-                                                                <button class="btn btn-success btn-sm" v-on:click="updateShow(game.Id)">
-                                                                    Join Game
-                                                                    {{game.Id}} Live Chat </button>
-                                                            </div>
-                                                            <div v-else>
-                                                                <button class="btn login btn-success btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                                                                    Login to access the Chat!
-                                                                    <img class="col-4 loginChatGames " src="imagenes/login%20chat.png" alt="login" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-
             <div class="row justify-content-center text-muted indexFooter">
                 Last Update: 02/04/2020
             </div>
@@ -303,15 +230,7 @@
                 </div>
             </nav>
             <div class="row importantRow">
-                <!--<div class="col-12 accordion" id="accordionExampleThree">
-                    <div class="card-header" id="headingThree">
-                        <h4>
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                NYSL LOCATIONS
-                            </button>
-                        </h4>
-                    </div>
-                </div>-->
+               
                 <div class="row card">
                     <div class="col card-header" id="headerThreeOne">
                         <div class="row locationRow" v-for="place in fieldList">
